@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Index{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <div id="fff" class="bbb" style="color: #0f0">element</div>
+
+    <div class="test1">content</div>
+    <div class="test2">content</div>
+    <div class="test3">test3</div>
+    <div class="test3">test3</div>
+
+    <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+{% endblock %}

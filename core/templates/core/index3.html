@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AskPupkin</title>
+
+    <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="index0.css">-->
+    <link rel="stylesheet" href="/static/core/css/index3.css">
+
+</head>
+<body>
+
+
+
+    <!-- Display Navigation Bar goes HERE  -->
+    <div class="top-orange-line"></div>
+    <nav class="navbar navbar-light navbar-expand-lg py-md-0" style="background-color: #fafafb; border-bottom: 15px solid; border-image: linear-gradient(to bottom, #e7e7e7, #fbfbfb, #ffffff, #ffffff) 100% 0%">
+        <div class="container margin">
+
+            <a class="navbar-brand bg-light" style="font-size: 20px;" href="#">
+                <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a" alt="" width="50" height="50">
+                <span style="font-weight: 300">stack</span>
+                <span style="font-weight: bold; margin-right: 10px">overflow</span>
+            </a>
+            <div class="collapse navbar-collapse">
+                <button type="button" class="btn btn-light btn-sm mx-1" style="border-radius: 25px;">About</button>
+                <button type="button" class="btn btn-light btn-sm mx-1" style="border-radius: 25px;">Products</button>
+                <button type="button" class="btn btn-light btn-sm ml-1 mr-4" style="border-radius: 25px;">For Teams</button>
+
+                <!--<span class="navbar-text">-->
+                <!--    Navbar text with an inline element-->
+                <!--</span>-->
+
+                <form class="form-inline col-md-6">
+                    <input class="form-control" style="width: 400px" list="searchOptions" id="dropdownMenuSearch" placeholder="Search...">
+                    <datalist id="searchOptions">
+                        <option value="Python">
+                        <option value="Ruby">
+                        <option value="JavaScript">
+                        <option value="css">
+                        <option value="bash">
+                    </datalist>
+                </form>
+
+                <form class="form-inline">
+                    <button type="button" class="btn btn-md btn-outline-primary ml-3 mr-1">Log in</button>
+                    <button type="button" class="btn btn-md btn-primary">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<!--    <form>-->
+<!--        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>-->
+<!--            <input type="number" id="number" value="0" />-->
+<!--        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>-->
+<!--    </form>-->
+
+    <main class="container page-text margin">
+        <div class="row">
+
+            <!-- Display Navigation Slide Bar goes HERE  -->
+            <div class="container__row__sidebar col-md-1">
+            </div>
+
+
+            <!-- Display Comments goes HERE  -->
+            <div class="col-md-8">
+                <div class="grey-line row">
+                    <div class="col-md-2">
+                        <div>
+                            <img class="container__row__content__avatar_container__avatar large_avatar" src="/static/core/img/naturalarch_3360x2100.jpg">
+                        </div>
+
+                        <!-- Display Spinner Container goes HERE  -->
+                        <div class="container row">
+                            <div class="col-md-6">
+                                <form class="form-inline input-group input-group-sm">
+<!--                                    <input type="number" id="number" value="0" />-->
+                                    <input type="number" id="number1" value="9" class="form-control pt-3 pb-3 my-0 mx-0" style="width: 25px; height: 40px" placeholder=""/>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="btn-group-vertical d-grid gap-2">
+                                    <button id="increase1" onclick="increaseValue('number1')" class="btn btn-sm btn-sm__vs btn-primary rounded-circle my-0 mx-0 px-0 py-0" type="button">+</button>
+                                    <button id="decrease1" onclick="decreaseValue('number1')" class="btn btn-sm btn-sm__vs btn-primary rounded-circle my-0 mx-0 px-0 py-0" type="button">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Display Comment Text goes HERE  -->
+                    <div class="col-md-10 container__row__sidebar__underline_a">
+                        <h2>How to build a moon park?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus nibh, pharetra eget tincidunt eget, tempus eget ex. Nulla facilisi. Integer ac placerat arcu. Pellentesque molestie justo vel nunc ornare dapibus. Curabitur semper elit vitae varius blandit. Morbi in aliquam sapien. Fusce mattis odio eu ultrices gravida. Aenean sollicitudin, quam eu faucibus laoreet, elit eros accumsan felis, nec finibus augue augue at lectus. Vivamus erat purus, placerat sed ligula a, blandit gravida orci. Integer tristique neque turpis, dictum tincidunt arcu aliquam ac.
+                        </p>
+                        <p>Tags:
+                            <a href="#" class="">black-jack</a>
+                            <a href="#" class="">bender</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="comment-frame row">
+                    <div class="col-md-2">
+                        <div>
+                            <img class="container__row__content__avatar_container__avatar medium_avatar" src="/static/core/img/space_yellow.jpg">
+                        </div>
+
+                        <!-- Display Spinner Container goes HERE  -->
+                        <div class="container row">
+                            <div class="col-md-6">
+                                <form class="form-inline input-group input-group-sm">
+                                    <input type="number" id="number2" value="5" class="form-control pt-3 pb-3 my-0 mx-0" style="width: 25px; height: 40px" placeholder=""/>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="btn-group-vertical d-grid gap-2">
+                                    <button id="increase2" onclick="increaseValue('number2')" class="btn btn-sm btn-sm__vs btn-primary rounded-circle my-0 mx-0 px-0 py-0" type="button">+</button>
+                                    <button id="decrease2" onclick="decreaseValue('number2')" class="btn btn-sm btn-sm__vs btn-primary rounded-circle my-0 mx-0 px-0 py-0" type="button">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Display Comment Text goes HERE  -->
+                    <div class="container__content__middle_row__content col-md-10">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus nibh, pharetra eget tincidunt eget, tempus eget ex. Nulla facilisi. Integer ac placerat arcu. Pellentesque molestie justo vel nunc ornare dapibus. Curabitur semper elit vitae varius blandit. Morbi in aliquam sapien. Fusce mattis odio eu ultrices gravida.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="comment-frame row">
+                    <div class="col-md-2">
+                        <div>
+                            <img class="container__row__content__avatar_container__avatar medium_avatar" src="/static/core/img/space_blue.jpg">
+                        </div>
+
+                        <!-- Display Spinner Container goes HERE  -->
+                        <div class="container row">
+                            <div class="col-md-6">
+                                <form class="form-inline input-group input-group-sm">
+                                    <input type="number" id="number3" value="0" class="form-control pt-3 pb-3 my-0 mx-0" style="width: 25px; height: 40px" placeholder=""/>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="btn-group-vertical d-grid gap-2">
+                                    <button id="increase3" onclick="increaseValue('number3')" class="btn btn-sm btn-sm__vs btn-primary rounded-circle my-0 mx-0 px-0 py-0" type="button">+</button>
+                                    <button id="decrease3" onclick="decreaseValue('number3')" class="btn btn-sm btn-sm__vs btn-primary rounded-circle my-0 mx-0 px-0 py-0" type="button">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Display Comment Text goes HERE  -->
+                    <div class="container__content__middle_row__content col-md-10">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus nibh, pharetra eget tincidunt eget, tempus eget ex. Nulla facilisi. Integer ac placerat arcu. Pellentesque molestie justo vel nunc ornare dapibus. Curabitur semper elit vitae varius blandit. Morbi in aliquam sapien. Fusce mattis odio eu ultrices gravida.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="grey-line"></div>
+                <div class="">
+                    <textarea class="comment-input-box" placeholder=" Your answer here ..."></textarea>
+                    <br><input type="submit" value="Post Your Answer">
+                </div>
+            </div>
+
+
+            <!-- Display Side Bar goes HERE  -->
+            <div class="container__row__sidebar col-md-3">
+                <div class="container__row__sidebar__tags_a">
+                    <h3>Popular Tags</h3>
+                    <div>
+                    <a href="#">coursera</a>
+                    <a href="#">python</a>
+                    </div>
+                    <div>
+                    <a href="#">mysql</a>
+                    <a href="#">django</a>
+                    </div>
+                </div>
+                <div class="container__row__sidebar__underline_a">
+                    <h3>Best Members</h3>
+                    <div><a href="#">Mr. Freeman</a></div>
+                    <div><a href="#">Dr. House</a></div>
+                    <div><a href="#">Bender</a></div>
+                    <div><a href="#">Queen Victoria</a></div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+
+    <!--    <div class="col-md-1">-->
+    <!--        <label for="exampleColorInput" class="form-label">Color picker</label>-->
+    <!--        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">-->
+    <!--    </div>-->
+
+
+
+    <div style="background-color: #fafafb; border-bottom: 15px solid; border-image: linear-gradient(to top, #e7e7e7, #fbfbfb, #ffffff, #ffffff) 100% 0%"></div>
+    <div class="container">
+        <div class="row col">
+            <div class="col-md-12" style="font-size: 20px;">
+                <span class="top_bar__title2">Join Stack Overflow</span>
+                <span class="top_bar__title1 mr-4">to learn, share knowledge, and build your career.</span>
+                <button type="button" class="btn btn-md btn-outline-primary">GitHub</button>
+                <button type="button" class="btn btn-md btn-outline-primary">FaceBook</button>
+                <button type="button" class="btn btn-md btn-black">Google</button>
+                <button type="button" class="btn btn-md btn-primary">EMail</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!--    $('.clickMe').click(function(){-->
+    <!--    alert(this.id);-->
+    <!--    });-->
+    <!--    var $button = $(this);-->
+    <!--    alert(this.id);-->
+    <script>
+
+        function increaseValue(fun_id) {
+            var value = parseInt(document.getElementById(fun_id).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById(fun_id).value = value;
+        }
+
+        function decreaseValue(fun_id) {
+            var value = parseInt(document.getElementById(fun_id).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById(fun_id).value = value;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.test1 {
+    color: #ff0000;
+    background-color: #00ff00;
+}
+#fff { color: #f00 }
+.test2 {
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+.test3 {
+    height: 100px;
+    padding: 10px;
+    border: 5px solid #00ff00;
+    color: #ff0000;
+    margin: 10px;
+
+    display: inline-block;
+}

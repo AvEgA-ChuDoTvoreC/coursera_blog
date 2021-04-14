@@ -1,0 +1,72 @@
+.navig-field {
+    border-radius: 15px;
+}
+
+.main {
+    margin: 20px;
+    border-bottom: none;
+}
+.main .header {
+    font-size: 28px;
+}
+
+.main img {
+    display: block;
+    height: 80px;
+    border: 1px gray solid;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.article p, .big-article p {
+    font-size: 18px;
+}
+.article-number {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px gray solid;
+}
+
+
+.article {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.answer .col {
+    padding: 0;
+}
+.answer-form {
+    border: none;
+    padding: 0;
+}
+.answer-field {
+    height: 130px;
+    text-align: top;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.side-tags {
+    margin-bottom: 40px;
+}
+.side-tags-list {
+    font-size: 28px;
+    color: gray;
+}
+.side-members-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+.side-members-text {
+    margin-bottom: 10px;
+}
+

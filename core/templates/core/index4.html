@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/core/css/index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="http://techrocks.ru/wp-content/uploads/2017/12/stackoverflow.png" alt="" width="130" height="30" class="d-inline-block align-text-top">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Teams</a>
+        </li>
+      </ul>
+    </div>
+	<div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+  <div class="container-fluid">
+  <button type="button" class="btn btn-outline-primary">Log in</button>
+
+
+  <button class="btn btn-primary" type="submit">Register</button>
+  </div>
+  </div>
+  
+
+</nav>
+
+ <div class="container">
+  <div class="row">
+		<div class="col-9">
+			<div class="container">
+				<div class="row question">
+				
+					<div class="col-3">
+					<div class="container">
+						<div class="card" style="width: 200px;">
+						<img class="rounded" src="https://citaty.info/files/portraits/cb87cf74f7e8ae01123f39b973eb0989.jpg" width="180" height="180">
+						  <div class="card-body">
+							<h5 class="card-title">Винни</h5>
+								<div class="likes-count"><span class="likes">5</span><div class="btn-group-vertical btn-group-sm">
+							
+								  <button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) + 1">▲</button>
+								  <button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) - 1">▼</button>
+								</div>
+							</div>
+							
+						  </div>
+						</div>
+					</div>	
+					</div>
+					<div class="col-9">
+					<div class="container">
+						<h4>Что подарить Иа?</h4>
+						<p>В среду день рожденья у Иа. Что уему подарить?</p>
+						<div class="container">
+						<span>Tegs:<span>
+						<span><a href="#">Ослики</a></span>
+						<span><a href="#">Подарки</a></span>
+						</div>
+	
+					</div>
+					</div>
+				</div>
+				<div class="container answer">
+				<div class="row">
+					<div class="col-3">
+						<div class="container">
+						<div class="card" style="width: 200px;">
+						<img class="rounded" src="https://chto-takoe-lyubov.net/wp-content/uploads/2019/12/Pyatachok-zagadki.jpg" width="180" height="180">
+						  <div class="card-body">
+							<h5 class="card-title">Пяточек</h5>
+								<div class="likes-count"><span class="likes">8</span><div class="btn-group-vertical btn-group-sm">
+							
+								  <button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) + 1">▲</button>
+								  <button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) - 1">▼</button>
+								</div>
+							</div>
+							
+						  </div>
+						</div>
+					</div>
+					
+					</div>
+					<div class="col-9">
+					<div class="container">
+
+						<p class="answer-text">Шарики</p>
+					</div>
+					</div>
+				</div>
+				
+				</div>
+				<div class="container answer last-answer">
+				<div class="row">
+					<div class="col-3">
+											<div class="container">
+						<div class="card" style="width: 200px;">
+						<img src="https://i.pinimg.com/originals/e9/10/08/e9100836b41a77cc1c74d5d88ad133a4.png" width="200" height="200">
+						  <div class="card-body">
+								<h5 class="card-title">Сова</h5>
+								<div class="likes-count"><span class="likes">8</span>
+									<div class="btn-group-vertical btn-group-sm">
+				
+										<button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) + 1">▲</button>
+										<button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) - 1">▼</button>
+									</div>
+								</div>
+							
+						  </div>
+						</div>
+					</div>
+					
+					
+					</div>
+					<div class="col-9">
+					<div class="container">
+		
+						<p class="answer-text">Новый хвост</p>
+				
+					</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			</div>
+			<div class="container new_question">
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			<button type="button" class="btn btn-primary btn-lg" onclick="add_ansver()">Answer</button>
+			</div>
+			
+		</div>
+		<div class="col-3">
+		<div class="container">
+			<h4>Popular Tags</h4>
+			<span><a href="#">Ослики</a></span>
+			<span><a href="#">Подарки</a></span>
+			<span><a href="#">ДР</a></span>
+			<span><a href="#">Ночные совы</a></span>
+			
+			</div>
+		<div class="container">
+		<h4>Best Members</h4>
+		<div><a href="#">Иа</a></div>
+			<div><a href="#">Винни</a></div>
+			<div><a href="#">Сова</a></div>
+			<div><a href="#">Пяточек</a></div>
+		</div>
+		</div>
+
+
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script>
+function add_ansver(){
+console.log("a");
+let div = document.createElement('div');
+div.classList.add("last-answer");
+div.classList.add("container");
+div.classList.add("answer");
+let ans = document.querySelector('#exampleFormControlTextarea1')
+let ans_text = ans.value
+ans.value = "" 
+div.innerHTML = '<div class="row">' +
+	'				<div class="col-3">' +
+	'				 <div class="container">' +
+	'					<div class="card" style="width: 200px;">' +
+	'					 <img alt="Avatar" src="https://i.pinimg.com/originals/e9/10/08/e9100836b41a77cc1c74d5d88ad133a4.png" width="200" height="200">' +
+	'					  <div class="card-body"> '+
+	'						<h5 class="card-title">You</h5>'+
+	'							<div class="likes-count"><span class="likes">0</span>'+
+	'							<div class="btn-group-vertical btn-group-sm">'+
+	'						'+
+	'							  <button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) + 1">▲</button>'+
+	'							  <button type="button" class="btn btn-primary" onclick="this.parentElement.parentElement.firstChild.textContent=parseInt(this.parentElement.parentElement.firstChild.textContent) - 1">▼</button>'+
+	'							</div>'+
+	'						</div>'+
+	'						'+
+	'					  </div>'+
+	'					</div>'+
+	'				</div>'+
+	'				'+
+	'				'+
+	'				</div>'+
+	'				<div class="col-9">'+
+	'				<div class="container">'+
+	'	'+ 
+	'					<p class="answer-text">'+ans_text+'</p>'+
+	'				</div>'+
+	'				</div>'+
+	'			</div>'
+
+
+let element = document.querySelector('.last-answer');
+element.classList.remove("last-answer");
+element.after(div);
+
+}
+function inc_likes(){
+elem = this;
+likes = this.parentElement.parentElement.childElement.value++;
+likes.value ++;
+
+}
+function dec_likes(){
+}
+
+</script>
+
+
+</body>
+</html>

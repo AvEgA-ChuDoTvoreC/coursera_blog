@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/core/css/index.css" />
+  </head>
+  <body class="container">
+    <div class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="navbar-header col" >
+          <a class="h1" href="#">Stackoverflow</a>
+        </div>
+        
+        <form class="form-inline col-4">
+          <input class="form-control mr-sm-2 navig-field" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary my-2 my-sm-0 navig-field" type="submit">Search</button>
+        </form>
+        <ui class="navbar justify-content-end col"
+          <li class="nav-link"><a href="#">log in</a></li>
+          <li class="nav-link"><a href="#">register</a></li>
+        </ui>
+    </div>
+
+    <div class="container main">
+      <div class="row">
+        <div class="col-9">
+          <div class="container-fluid">
+            <div class="row big-article border-bottom border-dark">
+              <div class="col-2">
+                <img src="https://1avatara.ru/pic/men/man0024.jpg" alt="avatar" class="article-image" />
+                <input type="number" class="article-number"  value="5" placeholder="5" />
+              </div>
+              <div class="col-10">
+                <h3 class="header">ImportError: cannot import name '_literal_as_text' from 'sqlalchemy.sql.expression'</h3>
+                <p class="text">
+                    We are using SQLALCHEMY for our project and due to upgrade of SQLAlchemy we are getting below error
+                    It would be really good if someone can help us :
+                    Error message from worker: Traceback (most recent call last): 
+                    File "/usr/local/lib/python3.7/site-packages/dataflow_worker/batchworker.py", line 760, 
+                    in run self._load_main_session(self.local_staging_directory) 
+                    File "/usr/local/lib/python3.7/site-packages/dataflow_worker/batchworker.py", line 501, 
+                    in _load_main_session pickler.load_session(session_file) 
+                    File "/usr/local/lib/python3.7/site-packages/apache_beam/internal/pickler.py", line 311
+                </p>
+                <p class="tags">
+                
+
+
+                  Tags: <a href="#">python</a> <a href="#">sqlalchemy</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class=" border-bottom border-dark">
+            <div class="row article border border-dark">
+              <div class="col-2">
+                <img src="https://1avatara.ru/pic/men/man0145.jpg" alt="avatar" class="article-image" />
+                <input type="number" class="article-number" value="12" />
+              </div>
+              <div class="col-10">
+                <p>
+                  Your question does not have the full context, but I assume the 
+                  file above is called my_app/app.py or similar and the directory 
+                  does not contain a __init__.py file. Python needs that file to 
+                  see a directory as a module that it can import from. Add an empty 
+                  file called my_app/__init__.py and the problem should be solved
+                </p>
+              </div>
+            </div>
+            <div class="row article border border-dark">
+              <div class="col-2">
+                <img src="https://1avatara.ru/pic/anime/anime0128.jpg" alt="avatar" class="article-image" />
+                <input type="number" class="article-number"  value="3"  />
+              </div>
+              <div class="col-10">
+                <p>
+                  It looks like my issues was caused by the file called sqlalchemy.py 
+                  within the same folder. Since I've deleted this file 
+                  I don't have the issue anymore, I guess name of this file 
+                  was conflicting with the real sqlalchemy module...
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="row answer">
+              <div class="col">
+                <form class="form-control answer-form">
+                  <textarea
+                    rows="10"
+                    class="form-control answer-field border border-dark"
+                    placeholder="Enter your answer here.."
+                  ></textarea>
+                  <button
+                    class="btn btn-outline-success answer-btn"
+                    type="submit"
+                  >
+                    Answer
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="side-tags">
+            <h3 class="header">Popular Tags</h3>
+            <p class="side-tags-list">
+              <a href="#">coursera</a> 
+              <a href="#">python </a>
+              <a href="#">mysql </a>
+              <a href="#">django</a>
+            </p>
+          </div>
+          <div class="side-members">
+            <h3 class="header">Best Members</h3>
+            <ul class="side-members-list">
+              <li class="side-members-text"><a href="#">Mr. Freeman</a></li>
+              <li class="side-members-text"><a href="#">Dr. House</a></li>
+              <li class="side-members-text"><a href="#">Bender</a></li>
+              <li class="side-members-text"><a href="#">Queen Victoria</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
