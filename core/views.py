@@ -18,3 +18,6 @@ def index2(request):
 
 def index3(request):
     return render(request, "core/index3.html")
+
+def index4(request):
+    return render(request, "core/index4.html")

@@ -16,12 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from core.views import index0, index, index2, index3
+from core.views import index0, index, index2, index3, index4
 
 urlpatterns = [
-    url(r'^index0/$', index0),
-    url(r'^index/$', index),
     url(r'^admin/', admin.site.urls),
+    url(r'^index/$', index),
+    url(r'^index0/$', index0),
     url(r'^index2/$', index2),
     url(r'^index3/$', index3),
+    url(r'^index4/$', index4),
 ]
