@@ -18,7 +18,7 @@ Run the server:
 ```bash
 $ python manage.py runserver
 ```
-Need database migrations:
+Need database migrations?
 ```bash
 commands:
     - makemigrations
@@ -38,7 +38,7 @@ TODO:
 ## Visual Examples of StackOverflow mockup
 
 
-![stackoverflow_mockup](https://github.com/AvEgA-ChuDoTvoreC/coursera_blog/blob/main/core/static/core/img/space_blue.jpg)
+![stackoverflow_mockup](https://github.com/AvEgA-ChuDoTvoreC/coursera_blog/blob/main/core/static/core/img/stackoverflow_mockup.png)
 
 ![stackoverflow_mockup2](https://github.com/AvEgA-ChuDoTvoreC/coursera_blog/blob/main/core/static/core/img/space_yellow.jpg)
 
