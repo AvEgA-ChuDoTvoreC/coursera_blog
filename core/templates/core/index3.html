@@ -16,27 +16,32 @@
 
 
     <!-- Display Navigation Bar goes HERE  -->
-    <div class="top-orange-line"></div>
-    <nav class="navbar navbar-light navbar-expand-lg py-md-0" style="background-color: #fafafb; border-bottom: 15px solid; border-image: linear-gradient(to bottom, #e7e7e7, #fbfbfb, #ffffff, #ffffff) 100% 0%">
+    <div class="top-orange-line fixed-top"></div>
+    <nav class="navbar navbar-light sticky-top navbar-expand-lg py-md-0" style="background-color: #fafafb; border-bottom: 15px solid; border-image: linear-gradient(to bottom, #e7e7e7, #fbfbfb, #ffffff, #ffffff) 100% 0%">
         <!-- container-fluid navbar-wrapper margin -->
-        <div class="container margin">
+        <div class="container-fluid navbar-wrapper margin">
 
-            <a class="navbar-brand bg-light" style="font-size: 20px;" href="#">
-                <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a" alt="" width="50" height="50">
-                <span style="font-weight: 300">stack</span>
-                <span style="font-weight: bold; margin-right: 10px">overflow</span>
-            </a>
+
             <div class="collapse navbar-collapse">
-                <button type="button" class="btn btn-light btn-sm mx-1" style="border-radius: 25px;">About</button>
-                <button type="button" class="btn btn-light btn-sm mx-1" style="border-radius: 25px;">Products</button>
-                <button type="button" class="btn btn-light btn-sm ml-1 mr-4" style="border-radius: 25px;">For Teams</button>
+                <form class="form-group form-inline">
+                    <a class="navbar-brand bg-light" style="font-size: 20px;" href="#">
+                        <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a" alt="" width="50" height="50">
+                        <span style="font-weight: 300">stack</span>
+                        <span style="font-weight: bold; margin-right: 10px">overflow</span>
+                    </a>
+                </form>
+                <form class="form-group form-inline">
+                    <button type="button" class="btn btn-light btn-sm mx-1" style="border-radius: 25px;">About</button>
+                    <button type="button" class="btn btn-light btn-sm mx-1" style="border-radius: 25px;">Products</button>
+                    <button type="button" class="btn btn-light btn-sm ml-1 mr-4" style="border-radius: 25px;">For Teams</button>
+                </form>
 
                 <!--<span class="navbar-text">-->
                 <!--    Navbar text with an inline element-->
                 <!--</span>-->
 
-                <form class="form-inline col-md-6">
-                    <input class="form-control" style="width: 400px" list="searchOptions" id="dropdownMenuSearch" placeholder="Search...">
+                <form class="form-group form-inline">
+                    <input class="form-control" list="searchOptions" id="dropdownMenuSearch" placeholder="Search...">
                     <datalist id="searchOptions">
                         <option value="Python">
                         <option value="Ruby">
@@ -46,8 +51,10 @@
                     </datalist>
                 </form>
 
-                <form class="form-inline">
+                <form class="form-group form-inline">
                     <button type="button" class="btn btn-md btn-outline-primary ml-3 mr-1">Log in</button>
+                </form>
+                <form class="form-group form-inline">
                     <button type="button" class="btn btn-md btn-primary">Sign up</button>
                 </form>
             </div>
@@ -61,7 +68,8 @@
     <!--    </form>-->
 
     <!-- container-fluid main-wrapper page-text margin -->
-    <main class="container page-text margin">
+    <main class="container-fluid main-wrapper page-text margin">
+
         <div class="row">
 
             <!-- Display Navigation Slide Bar goes HERE  -->

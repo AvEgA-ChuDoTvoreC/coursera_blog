@@ -21,3 +21,6 @@ def index3(request):
 
 def index4(request):
     return render(request, "core/index4.html")
+
+def index_pass(request):
+    return render(request, "core/index_pass.html")

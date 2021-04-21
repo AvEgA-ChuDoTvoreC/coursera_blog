@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
-    'formdummy.apps.FormdummyConfig'
+    'formdummy.apps.FormdummyConfig',
+    'api.apps.ApiConfig'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'coursera_blog.urls'
+LOGIN_URL = '/login/'
 
 TEMPLATES = [
     {
